@@ -1,0 +1,6 @@
+<!--pages/mine/mine.wxml-->
+<view class='logo' style="display:block; text-align:center;">
+    <image mode='widthFix' src='../../images/hosir.jpg'></image>
+    <text>修改头像</text>
+
+</view>

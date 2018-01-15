@@ -1,0 +1,19 @@
+<!--pages/carts/carts.wxml-->
+  <view class="cartproduct clearfix">
+    <view class="fl img clearfix">
+      <image bindtap='onDel' class='fl del' src='../../images/del.jpg' mode='widthFix' ></image>
+      <image class='fr' src='../../images/shoeswm01.jpg' mode='widthFix'></image>
+    </view>
+    <view class='fl img00' >
+      <text class='txt1'>{{name}}</text>
+      <text class='txt2'>{{numbers}}件 37</text>
+      <text class='txt3'>￥<text class='pri'>{{price}}</text></text>
+    </view> 
+  </view> 
+  <!--totalprice  -->
+  <view class='totalprice clearfix'>
+    <text class='fl'>总计(不含运费)：￥<text>{{price*numbers}}</text></text>
+    <navigator class='fr' url='../suborder/suborder'>
+          <text class='settlement'>结算</text>
+      </navigator>
+  </view>

@@ -1,0 +1,176 @@
+.clearfix{
+  overflow: hidden;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+image{
+  display: block;
+  width: 100%;
+}
+.navigator{
+  display: block;
+}
+.navigator-hover {
+background-color:rgb(255, 255, 255);
+opacity:1;
+}
+/*banner s*/
+.banner{
+  width:100%;
+  height: 328rpx;
+  padding-top:101rpx; 
+}
+.banner image{
+  height: 328rpx;
+}
+.banner .wx-swiper-dot{
+  width: 20rpx;
+  height: 20rpx;
+  display: inline-block;
+  background:rgb(0, 0, 0);
+}
+.banner .wx-swiper-dot-active{
+  background:rgb(255, 255, 255); 
+}
+/*bannere  */
+/*search s  */
+.search{
+  position: fixed;
+  z-index: 100000000;
+  width: 100%;
+  background: #29402e;
+  height: 70rpx;
+  margin: 0 auto;
+  padding-bottom: 30rpx;
+}
+.search input{
+  width: 90%;
+  padding-left: 4%;
+  display: block;
+  margin: 0 auto;
+  background: #405244;
+  font-size: 30rpx;
+  border-radius:10rpx; 
+  height: 70rpx;
+  line-height: 70rpx;
+  color: #e6e6e6;
+  }
+
+/*search e  */
+/*tab s  */
+.tab{
+  background: #f6f6f6;
+}
+.tab .swiper-tab{ 
+  display: flex;    
+  text-align: center;    
+  line-height: 90rpx;  
+  background: #fff;  
+  font-size: 14px;  
+  height: 90rpx;
+}   
+.tab .swiper-tab-list{
+  position: relative;
+} 
+.tab swiper-item .goods{
+  display: block;
+  width: 49%;
+  background: #fff;
+  padding-top: 70rpx;
+  padding-bottom: 20rpx;
+  margin-bottom: 10rpx;
+}
+.tab swiper-item .goods:nth-of-type(2n){
+  float: right;
+}
+.tab swiper-item .goods:nth-of-type(2n+1){
+  float: left;
+}
+.tab swiper-item .goods image{
+  width: 80%;
+  margin: 0 auto;
+  height: 86rpx;
+}
+.tab swiper-item .goods text{
+  display: block;
+  text-align: left;
+  padding-left: 30rpx;
+  color: #333;
+  font-size: 29rpx;
+}
+.tab swiper-item .goods text.info{
+  margin-top: 60rpx;
+}
+.tab swiper-item .goods text.price{
+  margin-top: 5rpx;
+}
+.tab swiper-item .goods text.price text{
+  display: inline-block;
+  padding-left: 0;
+}
+.tab .swiper-tab-list  image{
+  display:none; 
+  position: absolute;
+  left: 50%;
+  margin-left: -20rpx;
+  bottom: -23rpx;
+  width: 40rpx;
+  height: 25rpx;
+}
+ .tab view.on image{
+  display: block; 
+}
+.tab .swiper-tab-list{  
+  flex: 1;  
+  font-size: 29rpx;    
+  display: inline-block;  
+  color: #999;
+}  
+.tab .swiper-tab-list.on{   
+  color: #333;    
+  border-bottom: 2px solid #666;
+}   
+ .tab .swiper-box{
+  margin-top: 20rpx;
+}  
+.tab swiper-item{
+  margin-top: 15rpx;
+}
+.jc{
+  font-size: 40rpx;
+  color: #333;
+  }
+/*tab e  */
+
+/*footer  s */
+.footer{
+  position: fixed;
+  z-index: 100000;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align:center;
+  border-top:1px solid #bdbdbd;
+  padding-top: 15rpx;
+  padding-bottom: 5rpx;
+  background: #fff;
+}
+.footer .item{
+  flex: 1;
+}
+.footer .item image{
+  width:45rpx; 
+  margin: 0 auto;
+}
+.footer .item text{
+  font-size: 26rpx;
+  line-height: 26rpx;
+  margin-top: 4rpx;
+}
+/*footer e  */

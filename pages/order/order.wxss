@@ -1,0 +1,106 @@
+/* pages/order/order.wxss */
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix{
+  overflow: hidden;
+}
+.swiper-tab{ 
+  display: flex;   
+  text-align: center;    
+  line-height: 80rpx;  
+  background: #fff;  
+  font-size: 14px;  
+  height: 80rpx;
+  background: #2d3f31;
+}   
+.tab .swiper-tab-list{
+  color: #fff;
+} 
+.tab .swiper-tab-list  image{
+  width: 40rpx;
+  height: 25rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+.swiper-tab-list{  
+  flex: 1;  
+  font-size: 29rpx;    
+  display: inline-block;  
+}  
+.tab .swiper-tab-list.on{
+  color: #fff;
+  border-bottom:4rpx solid #fdfbfc; 
+}
+.tab .imgs{
+  padding: 30rpx 0;
+  margin-top: 20rpx;
+  background: #fff;
+  border-bottom: 1px dashed #e6e6e6; 
+}
+.tab .imgs >view{
+  overflow: hidden
+}
+.tab .imgs image{
+  width: 30%;
+}
+.tab .imgs .info{
+  display: block;
+  width: 48%;
+}
+.tab .imgs .info text{
+  display: block;
+  font-size: 26rpx;
+  line-height: 26rpx;
+}
+.tab .imgs .info .size{
+ color: #999;
+ display: inline-block;
+ font-size: 20rpx;
+ line-height: 20rpx;
+}
+.tab .imgs .info .size text{
+ color: #999;
+ display: inline-block;
+ font-size: 20rpx;
+ line-height: 20rpx;
+}
+.tab .imgs .price{
+  display: block;
+  width: 21%;
+  padding-right:1%; 
+  font-size: 26rpx;
+}
+.tab .imgs .price  .prices{
+  display: block;
+  text-align: right;
+}
+.tab .imgs .price  .num{
+  display: block;
+  color: #999;
+  text-align: right;
+  font-size: 22rpx;
+}
+
+.tab .imgs .zhuang{
+  margin-top: 20rpx;
+  overflow: hidden;
+  padding-right: 10rpx;
+}
+.tab .imgs .zhuang text{
+  display: bloxk;
+  border: 1px solid #ccc;
+  font-size: 24rpx;
+  padding:5rpx 15rpx;
+  border-radius:20rpx; 
+}
+.tab .imgs .zhuang .del{
+  margin-right:10rpx; 
+}
+.tab .imgs .zhuang .pay{
+
+}

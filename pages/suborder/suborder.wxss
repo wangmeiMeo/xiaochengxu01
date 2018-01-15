@@ -1,0 +1,134 @@
+/* pages/order/order.wxss */
+/* pages/carts/carts.wxss */
+
+.clearfix {
+  overflow: hidden;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+image {
+  display: block;
+  width: 100%;
+}
+
+.navigator {
+  display: block;
+}
+
+.navigator-hover {
+  background-color: rgb(255, 255, 255);
+  opacity: 1;
+}
+
+/*cartproduct  */
+.order{
+  background: #f6f6f6;
+  height: 500rpx;
+}
+.cartproduct {
+  margin-top: 20rpx;
+  margin-bottom: 2rpx;
+  padding: 0 20rpx;
+  background: #fff;
+}
+.cartproduct .img{
+  width: 28%;
+}
+.cartproduct .img00{
+  float: right;
+  width: 65%;
+}
+
+.cartproduct .img image:nth-of-type(2) {
+  width: 180rpx;
+  margin: 0 20rpx;
+  border: 1px solid #ccc;
+}
+
+.cartproduct text {
+  display: block;
+}
+.cartproduct  text.txt3{
+  float: right;
+  color: red;
+}
+.cartproduct  text.txt3 text.pri{
+  display: inline-block;
+  font-size: 28rpx;
+  color: red;
+}
+.cartproduct  text.txt1{
+  margin-top: 18rpx;
+  font-size: 32rpx;
+  color: #333;
+}
+
+.cartproduct  text.txt2 {
+  font-size: 28rpx;
+  color: #999;
+}
+.order .title{
+  padding:18rpx 20rpx; 
+  color: #999;
+  font-size: 30rpx;
+  background: #f6f6f6;
+}
+.order .message{
+  padding-left:20rpx; 
+  background: #fff;
+  height: 85rpx;
+  line-height: 85rpx;
+  border: 1px solid #f0f0f0;
+}
+.order .message text{
+  display: block;
+  font-size: 30rpx;
+  color: #333;
+  width: 20%;
+  text-align: left;
+}
+.order .message input{
+  width: 70%;
+  height: 85rpx;
+  line-height: 85rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.order .word input{
+  font-size:32rpx;
+  line-height: 32rpx;
+  height: 32rpx;
+  padding: 20rpx;
+  border-bottom:1px solid #e4e4e4; 
+}
+
+.order .suborder{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #29402e;
+}
+.order .suborder button{
+  color:#fff;
+  background: #29402e;
+  font-size: 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border: none;
+}
+.order .suborder{
+  border-radius: 0;
+}
+.order .suborder .navigator-hover{
+  border-radius:0; 
+  display: block;
+  width: 100%;
+}

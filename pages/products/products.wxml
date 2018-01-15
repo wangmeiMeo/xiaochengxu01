@@ -1,0 +1,81 @@
+<!--pages/products/products.wxml-->
+<!--弹出的遮罩层  -->
+<view class="main bright_view_hide {{showView?'bright_view_show':''}}" bindtap='onChangeShowState'></view>
+<!--banner s  -->
+<swiper class='banner' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">  
+  <block wx:for="{{imgUrls}}">  
+    <swiper-item>  
+        <navigator url="{{item.link}}" hover-class="navigator-hover">  
+          <image src="{{item.url}}" class="slide-image" />  
+        </navigator>   
+    </swiper-item>  
+  </block>  
+</swiper>  
+<!--banner e  -->
+<!--detailed s  -->
+<view class='detail'>
+  <text class='info'>{{info}}</text>
+  <text class='price'>￥<text>{{price}}</text></text>
+  <text class='size'>{{sizeinfo}}</text>
+  <text class='material'>{{caizhi}}</text>
+  <text class='color'>{{color}}</text>
+  <text class='place'>{{place}}</text>  
+</view>
+<!--detailed e  -->
+
+<!--pay s 微信支付提示  -->
+<view class='pay clearfix'>
+  <image src='../../images/weixin.jpg' mode="widthFix"></image>
+  <text>{{payway}}</text>
+</view>
+<!--pay e  -->
+<!--des 具体描述部分  -->
+<view class='des'>
+  <text>{{textdes}}</text>
+</view>
+<!--des e  -->
+
+<!--footer s  -->
+ <view class='footer clearfix'>
+  <view class='fl'>
+    <navigator url='../carts/carts'  hover-class="navigator-hover" open-type="switchTab">
+      <image src='../../images/cart.jpg' mode='widthFix'></image>
+    </navigator>
+    </view>
+  <button class='fl' bindtap="onChangeShowState">加入购物车</button>
+</view> 
+<!--footer e  -->
+<!--选择的商品的详情  -->
+<view wx:for="{{carts}}" class="goods bright_view_hide {{showView?'bright_view_show':''}}">
+  <view class='clearfix sizes'>
+    <text class='fl'>{{sizetext}}</text>
+    <text class='fr'>￥<text>{{price}}</text></text>
+  </view>
+  <view class='specifications clearfix'>
+    <text class='fl'>规格</text>
+    <view class='fr shoesize'>
+      <text bindtap="Func" data-text="36" data-current="0" class="{{tab==0 ? 'on' : ''}}">36</text>
+      <text bindtap="Func" data-text="37" data-current="1" class="{{tab==1 ? 'on' : ''}}">37</text>
+      <text bindtap="Func" data-text="38" data-current="2" class="{{tab==2 ? 'on' : ''}}">38</text>
+      <text bindtap="Func" data-text="39" data-current="3" class="{{tab==3 ? 'on' : ''}}">39</text>
+      <text bindtap="Func" data-text="40" data-current="4" class="{{tab==4 ? 'on' : ''}}">40</text>
+    </view>
+  </view>
+  <view class='num clearfix'>
+    <text class='fl'>数量</text>
+     <!-- 增加减少数量按钮 -->
+    <view class='fr'>
+        <text class='subtraction' bindtap="minusCount" data-index="{{index}}">-</text>
+        <text class='shu'>{{item.num}}</text>
+        <text class='add' bindtap="addCount" data-index="{{index}}">+</text>
+    </view>
+  </view>
+  <view class='total clearfix'>
+    <text class='fl'>总价</text>
+    <view class='fr'>
+        <text class='totalprice'>{{item.num*price}}</text>
+    </view>
+  </view>
+  <button class='sure' bindtap="onChangeShowState">确定</button>
+</view>
+

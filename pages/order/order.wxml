@@ -1,0 +1,159 @@
+<!--pages/order/order.wxml-->
+
+ <!--导航菜单-->
+<view class='tab'>  
+  <view class="swiper-tab">    
+    <view class="bre swiper-tab-list {{tab==1 ? 'on' : ''}}" 
+      data-current="1" bindtap="tab_click">
+        <image src='../../images/iconhui02.png' mode='widthFix'></image>待发货
+    </view>  
+    <view class="bre swiper-tab-list {{tab==2 ? 'on' : ''}}" 
+      data-current="2" bindtap="tab_click">
+        <image src='../../images/iconhui03.png' mode='widthFix'></image>待收货
+    </view>
+    <view class="bre swiper-tab-list {{tab==3 ? 'on' : ''}}" 
+      data-current="3" bindtap="tab_click">
+        <image src='../../images/iconhui03.png' mode='widthFix'></image>待评价
+    </view> 
+  </view>  
+  <swiper circular='true' current="{{tab}}" class="swiper-box" duration="300" 
+    style="height: {{clientHeight?clientHeight+'px':'auto'}}" bindchange="tab_slide">  
+    <!--待付款  -->
+    <swiper-item>
+      <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+       <view  class='imgs'>
+          <view>
+            <image class='fl' mode="widthFix" src='../../images/shoe01.jpg'></image>
+            <text class='fl info'>
+              <text class=''>女士豆豆鞋子</text>
+              <text class='size'>鞋子号码：<text>36</text>颜色：<text>红色</text></text>
+            </text>
+            <text class='price fr clearfix'>
+              <text class='prices'>￥<text>118.00</text></text>
+              <text class="num">×<text>11</text></text>            
+            </text>
+          </view>
+          <view class='zhuang'>
+            <text class="pay fr">付款</text>          
+            <text class='del fr'>取消订单</text>
+          </view>
+       </view>
+       <view  class='imgs'>
+          <view>
+            <image class='fl' mode="widthFix" src='../../images/shoe01.jpg'></image>
+            <text class='fl info'>
+              <text class=''>女士豆豆鞋子</text>
+              <text class='size'>鞋子号码：<text>36</text>颜色：<text>红色</text></text>
+            </text>
+            <text class='price fr clearfix'>
+              <text class='prices'>￥<text>118.00</text></text>
+              <text class="num">×<text>11</text></text>            
+            </text>
+          </view>
+          <view class='zhuang'>
+            <text class="pay fr">付款</text>          
+            <text class='del fr'>取消订单</text>
+          </view>
+       </view>
+       <view  class='imgs'>
+          <view>
+            <image class='fl' mode="widthFix" src='../../images/shoe01.jpg'></image>
+            <text class='fl info'>
+              <text class=''>女士豆豆鞋子</text>
+              <text class='size'>鞋子号码：<text>36</text>颜色：<text>红色</text></text>
+            </text>
+            <text class='price fr clearfix'>
+              <text class='prices'>￥<text>118.00</text></text>
+              <text class="num">×<text>11</text></text>            
+            </text>
+          </view>
+          <view class='zhuang'>
+            <text class="pay fr">付款</text>          
+            <text class='del fr'>取消订单</text>
+          </view>
+       </view>
+       <view  class='imgs'>
+          <view>
+            <image class='fl' mode="widthFix" src='../../images/shoe01.jpg'></image>
+            <text class='fl info'>
+              <text class=''>女士豆豆鞋子</text>
+              <text class='size'>鞋子号码：<text>36</text>颜色：<text>红色</text></text>
+            </text>
+            <text class='price fr clearfix'>
+              <text class='prices'>￥<text>118.00</text></text>
+              <text class="num">×<text>11</text></text>            
+            </text>
+          </view>
+          <view class='zhuang'>
+            <text class="pay fr">付款</text>          
+            <text class='del fr'>取消订单</text>
+          </view>
+       </view>
+      </scroll-view>
+    </swiper-item>  
+    <!--  -->
+    <swiper-item>
+      <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+        <view  class='imgs'>
+          <view>
+            <image class='fl' mode="widthFix" src='../../images/shoe01.jpg'></image>
+            <text class='fl info'>
+              <text class=''>女士豆豆鞋子</text>
+              <text class='size'>鞋子号码：<text>36</text>颜色：<text>红色</text></text>
+            </text>
+            <text class='price fr clearfix'>
+              <text class='prices'>￥<text>118.00</text></text>
+              <text class="num">×<text>11</text></text>            
+            </text>
+          </view>
+          <view class='zhuang'>
+            <text class="pay fr">付款</text>          
+            <text class='del fr'>取消订单</text>
+          </view>
+       </view>
+      </scroll-view>
+    </swiper-item> 
+    <swiper-item>
+      <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+        <view  class='imgs'>
+          <view>
+            <image class='fl' mode="widthFix" src='../../images/shoe01.jpg'></image>
+            <text class='fl info'>
+              <text class=''>女士豆豆鞋子</text>
+              <text class='size'>鞋子号码：<text>36</text>颜色：<text>红色</text></text>
+            </text>
+            <text class='price fr clearfix'>
+              <text class='prices'>￥<text>118.00</text></text>
+              <text class="num">×<text>11</text></text>            
+            </text>
+          </view>
+          <view class='zhuang'>
+            <text class="pay fr">付款</text>          
+            <text class='del fr'>取消订单</text>
+          </view>
+       </view>
+      </scroll-view>
+    </swiper-item> 
+    <swiper-item>
+      <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+        <view  class='imgs'>
+          <view>
+            <image class='fl' mode="widthFix" src='../../images/shoe01.jpg'></image>
+            <text class='fl info'>
+              <text class=''>女士豆豆鞋子</text>
+              <text class='size'>鞋子号码：<text>36</text>颜色：<text>红色</text></text>
+            </text>
+            <text class='price fr clearfix'>
+              <text class='prices'>￥<text>118.00</text></text>
+              <text class="num">×<text>11</text></text>            
+            </text>
+          </view>
+          <view class='zhuang'>
+            <text class="pay fr">付款</text>          
+            <text class='del fr'>取消订单</text>
+          </view>
+       </view>
+      </scroll-view>
+    </swiper-item> 
+  </swiper>  
+</view>

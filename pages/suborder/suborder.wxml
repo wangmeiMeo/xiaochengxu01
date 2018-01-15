@@ -1,0 +1,53 @@
+<!--pages/order/order.wxml-->
+<view class='order'>
+  <view class="cartproduct clearfix">
+    <view class="fl img clearfix">
+      <image class='fr' src='../../images/shoeswm01.jpg' mode='widthFix'></image>
+    </view>
+    <view class='fl img00'>
+      <text class='txt1'>手工镶钻黑色凉拖</text>
+      <text class='txt2'>1件 37</text>
+      <text class='txt3'>￥<text class='pri'>1088</text></text>
+    </view> 
+  </view>
+  <!-- 联系方式  -->
+  <view class="contect">
+    <view class='title'>联系方式</view>
+    <view class="message clearfix">
+      <text class='fl'>姓名</text> <input class='fr' auto-focus='true' type="text" placeholder='王女士' />
+    </view>
+    <view class="message clearfix">
+      <text class='fl'>电话</text> <input class='fr' auto-focus='true' type="text" placeholder='18801474720' />
+    </view>
+    <view class="message clearfix">
+      <text class='fl'>电子邮箱</text> <input class='fr' auto-focus='true' type="text" placeholder='用于接收订单状态' />
+    </view>
+  </view>
+
+<!--收获地址  -->
+  <view class="address">
+    <view class='title'>收获地址</view>
+    <view class="message clearfix">
+      <text class='fl'>地区</text> <input class='fr' auto-focus='true' type="text" placeholder='北京市' />
+    </view>
+    <view class="message clearfix">
+      <text class='fl'>详细地址</text> <input class='fr' auto-focus='true' type="text" placeholder='北京市丰台区' />
+    </view>
+    <view class="message clearfix">
+      <text class='fl'>邮编</text> <input class='fr' auto-focus='true' type="text" placeholder='100071' />
+    </view>
+  </view>
+
+
+  <!--留言  -->
+  <view class='word'>
+    <view class='title'>留言</view>
+    <input placeholder='选填'/>
+  </view>
+  <view class="suborder">
+    <navigator url="../order/order" open-type="switchTab">
+      <button>提交订单</button>
+    </navigator>
+  </view>
+</view>
+  

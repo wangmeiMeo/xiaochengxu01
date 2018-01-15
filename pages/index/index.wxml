@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<view class="section search">
+  <input placeholder="搜索商品" auto-focus/>
+</view>
+<!--banner s  -->
+<swiper class='banner' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" >  
+  <block wx:for="{{imgUrls}}">  
+    <swiper-item>  
+        <navigator url="{{item.link}}" hover-class="navigator-hover">  
+          <image src="{{item.url}}" class="slide-image" />  
+        </navigator>   
+    </swiper-item>  
+  </block>  
+</swiper>  
+<!--banner e  -->
+<!--tab s 商品分类-->
+<view class='tab'>  
+  <view class="swiper-tab">  
+    <view class="bre swiper-tab-list {{tab==0 ? 'on' : ''}}" 
+      data-current="0" bindtap="tab_click">
+        商品
+    </view>  
+    <view class="bre swiper-tab-list {{tab==1 ? 'on' : ''}}" 
+      data-current="1" bindtap="tab_click">
+        分类
+    </view>  
+  </view>  
+  <swiper  circular="true" id="swiper1" bindchange="tab_slide" current="{{tab}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+    <swiper-item class="slide-swiper" >
+      <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+        <view wx:key="{{index}}" class='goods clearfix' bindtap='request_index'  wx:for="{{product}}" data-product_id='index'>
+          <image mode="aspectFit" src='{{item.src}}' ></image>
+          <text class='info'>{{item.name}}</text>
+          <text class='price'>￥<text>{{item.price}}</text></text>
+          </view> 
+      </scroll-view>
+    </swiper-item>
+    <swiper-item class="slide-swiper">
+      <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+        <view wx:key="{{index}}" bindtap='request_index'  class='goods clearfix'  wx:for="{{product}}" data-product_id='index'>
+          <image mode="aspectFit" src='{{item.src}}'></image>
+          <text class='info'>{{item.name}}</text>
+          <text class='price'>￥<text>{{item.price}}</text></text>
+          </view> 
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>
+<!--tab e 商品分类  -->
+
+
+
+
+
+
